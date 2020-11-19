@@ -27,7 +27,7 @@ hr {
     top: 0;
     z-index: 200; /* useful to keep href working on container content in hamburger */
     height: 100px;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-content: space-between;
     align-items: center;
