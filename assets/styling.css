@@ -258,6 +258,7 @@ section {
     text-align: center;
     background-image: url('sheetmusic.jpg');
     background-size: cover;
+    background-attachment: fixed;
     /* box-shadow: 0px 2px 10px 2px rgb(31, 31, 31); */
     /* background-image: linear-gradient(to bottom left, rgb(184, 123, 137), rgb(70, 47, 74));
     */
