@@ -1,45 +1,63 @@
 /* main */
 body {
     color: rgb(244, 228, 201);
-    font-family: serif;
+    font-family: "Cormorant SC";
+    letter-spacing: 4px;
+    line-height: 200%;
+    font-weight: lighter;
     margin: 0;
     padding: 0;
     font-size: 20px;
-    text-shadow: 1px 1px rgb(77, 77, 77);
-    background-color: rgb(48, 32, 51);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    background-color: rgb(46, 41, 53);
+    /* background-image: url('vintage-wallpaper.png');
+    background-position: center top;
+    background-attachment: fixed; */
 }
 
 a {
     color: rgb(255, 162, 0);
     text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: rgb(115, 136, 255);
+}
+
+a:active {
+    color: rgb(255, 87, 87);
 }
 
 hr {
-    background-color: rgb(81, 67, 172);
+    background-color: rgb(115, 136, 255);
     border-width: 0px;
     width: 1px;
 }
 
 /* header */
 .header {
+    padding: 0px;
     position: -webkit-sticky;
 	position: sticky;
     top: 0;
     z-index: 200; /* useful to keep href working on container content in hamburger */
-    height: 100px;
-    display: none;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-content: space-between;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-image: linear-gradient(to top left, rgb(184, 104, 123), rgb(44, 33, 55));
-    box-shadow: 0px 2px 10px 2px rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom left, rgb(184, 123, 137), rgb(70, 47, 74));
+    box-shadow: 0px 2px 10px 2px rgb(31, 31, 31);
+    animation-name: '';
+    animation-duration: 1s;
 }
 
 .header-img {
-    width: 500px;
+    max-width: 250px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .header h1 {
@@ -59,10 +77,9 @@ hr {
     align-items: center;
 }
 
-.nav-item {
+/* .nav-item {
     font-size: 20px;
-    padding: 10px;
-}
+} */
 
 .nav hr {
     height: 30px;
@@ -72,7 +89,7 @@ hr {
 .container {
     display: block;
     width:auto;
-    margin-left:50px;
+    margin-left:10px;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
@@ -103,7 +120,7 @@ hr {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(125, 140, 153);
+    background-color: rgb(85, 85, 85);
     width: 100%;
     left: 0;
     top: 0;
@@ -111,7 +128,7 @@ hr {
     /* opacity: .8; */
     justify-content: center;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 #container-content hr {
@@ -133,7 +150,7 @@ hr {
 }
 
 .menup:hover {
-    background-color: rgb(230, 176, 226);
+    background-color: rgb(94, 86, 255);
     width: auto;
 }
 
@@ -156,11 +173,20 @@ hr {
 
 .landing h1 {
     font-size: 60px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.landing h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 /* slant */
 .slant {
-    background: rgb(48, 32, 51);
+    display: none;
+    background-color: rgb(46, 41, 53);
+    /* background-image: url('vintage-wallpaper.png');
+    background-position: center top;
+    background-attachment: fixed; */
     padding-top: 130px;
     position: relative;
     width: 100%;
@@ -173,7 +199,10 @@ hr {
     height: 125px;
     top: -50px;
     left: 0;
-    background: rgb(48, 32, 51);
+    background-color: rgb(46, 41, 53);
+    /* background-image: url('vintage-wallpaper.png');
+    background-position: center top;
+    background-attachment: fixed; */
     transform: skewY(10deg);
 }
 
@@ -184,7 +213,10 @@ hr {
     height: 125px;
     top: -50px;
     right: 0;
-    background: rgb(48, 32, 51);
+    background-color: rgb(46, 41, 53);
+    /* background-image: url('vintage-wallpaper.png');
+    background-position: center top;
+    background-attachment: fixed; */
     transform: skewY(-10deg);
 }
 
@@ -201,21 +233,18 @@ hr {
 /* Section */
 section {
     position: relative;
-    font-size: 30px;
     display: flex;
     flex-direction: column;
-    /* align-items: left;
-    justify-content: center; */
+    align-content: center;
+    justify-content: center;
     margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
     /* max-width: 1000px; */
 }
 
 .style2 {
-    background-image: url('vintage-wallpaper.png');
-    background-position: center top;
-    background-attachment: fixed;
+    
 }
 
 /* Footer */
@@ -223,8 +252,8 @@ section {
     position: relative;
     padding: 5px;
     text-align: center;
-    box-shadow: 0px -2px 10px 2px rgb(0, 0, 0);
-    background-image: linear-gradient(to top left, rgb(184, 104, 123), rgb(44, 33, 55));
+    box-shadow: 0px 2px 10px 2px rgb(31, 31, 31);
+    background-image: linear-gradient(to bottom left, rgb(184, 123, 137), rgb(70, 47, 74));
 }
 
 /* media query */
@@ -243,6 +272,23 @@ section {
         display: none;
     }
     .header {
-        justify-content: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Animations */
+
+@keyframes header {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
