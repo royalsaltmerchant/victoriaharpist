@@ -328,6 +328,11 @@ section {
     /* max-width: 1000px; */
 }
 
+.style2 {
+    background-image: url('vintage-wallpaper.png');
+    background-attachment: fixed;
+}
+
 /* Footer */
 .footer {
     display: flex;
