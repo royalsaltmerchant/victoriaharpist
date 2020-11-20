@@ -207,6 +207,7 @@ p {
 
 #section02 a {
     padding-top: 60px;
+    transition-duration: 2s;
   }
   #section02 a span {
     position: absolute;
@@ -218,6 +219,7 @@ p {
     border: 1px solid #fff;
     border-radius: 100%;
     box-sizing: border-box;
+    box-shadow: 0px 3px 10px black;
   }
   #section02 a span::after {
     position: absolute;

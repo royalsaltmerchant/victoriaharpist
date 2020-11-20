@@ -28,3 +28,8 @@ window.onscroll = () => {
     //     document.getElementById("projects-div").className = "slideUp3";
     // }
   }
+
+// scroll from landing to main body
+function scrollFromLanding() {
+  window.scrollTo({ top: 700, behavior: 'smooth' })
+}
