@@ -3,10 +3,14 @@ layout: default
 ---
 <style>
 form {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
-<form name="contact" method="POST" data-netlify="true">
+<h1 style="text-align: center;">Contact</h1>
+<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
@@ -14,7 +18,7 @@ form {
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Message: <textarea cols="40" rows="10" name="message"></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
