@@ -195,8 +195,6 @@ p {
     border-style: solid;
     border-color: rgb(247, 230, 201);
     color: rgb(247, 230, 201);
-    text-shadow: 1px 1px rgb(41, 41, 41);
-    box-shadow: 1px 3px 10px rgb(41, 41, 41);
     background: none;
     font-family: Verdana;
     font-size: 20px;
