@@ -3,7 +3,6 @@ body {
     color: rgb(247, 230, 201);
     font-family: "Cormorant SC";
     letter-spacing: 4px;
-    line-height: 200%;
     font-weight: lighter;
     margin: 0;
     padding: 0;
@@ -33,6 +32,10 @@ hr {
     background-color: rgb(115, 136, 255);
     border-width: 0px;
     width: 1px;
+}
+
+p {
+    line-height: 200%;
 }
 
 /* header */
@@ -258,6 +261,7 @@ section {
     align-items: center;
     width: 100%;
     align-self: flex-end;
+    flex-wrap: wrap;
     height: 90vh;
     font-size: 35px;
     position: relative;
