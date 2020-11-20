@@ -1,6 +1,6 @@
 /* main */
 body {
-    color: rgb(244, 228, 201);
+    color: rgb(247, 230, 201);
     font-family: "Cormorant SC";
     letter-spacing: 4px;
     line-height: 200%;
@@ -253,6 +253,14 @@ section {
 
 /* Footer */
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: flex-end;
+    height: 90vh;
+    font-size: 35px;
     position: relative;
     padding: 5px;
     text-align: center;
@@ -262,6 +270,11 @@ section {
     /* box-shadow: 0px 2px 10px 2px rgb(31, 31, 31); */
     /* background-image: linear-gradient(to bottom left, rgb(184, 123, 137), rgb(70, 47, 74));
     */
+}
+
+.footer img {
+    width: 70px;
+    padding: 10px;
 }
 
 /* media query */
