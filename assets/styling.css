@@ -304,6 +304,12 @@ section {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .landing {
+        background-position: left;
+    }
+    .footer {
+        background-position: left;
+    }
 }
 
 /* Animations */
