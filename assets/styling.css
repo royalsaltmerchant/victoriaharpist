@@ -306,9 +306,11 @@ section {
     }
     .landing {
         background-position: left;
+        background-attachment:scroll
     }
     .footer {
         background-position: left;
+        background-attachment:scroll
     }
 }
 
