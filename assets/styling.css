@@ -89,7 +89,6 @@ hr {
 .container {
     display: block;
     width:auto;
-    margin-left:10px;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
@@ -262,7 +261,7 @@ section {
     height: 90vh;
     font-size: 35px;
     position: relative;
-    padding: 5px;
+    /* padding: 5px; */
     text-align: center;
     background-image: url('sheetmusic.jpg');
     background-size: cover;
