@@ -202,9 +202,17 @@ p {
     font-size: 20px;
     padding: 10px;
     opacity: 0.5;
+    outline: none;
+    text-decoration: none;
 }
+
 .landing button:hover {
     opacity: 1;
+}
+
+.landing button:active {
+    border-color: rgb(255, 72, 72);
+    color: rgb(255, 72, 72);
 }
 
 /* scroll down button inside landing */
