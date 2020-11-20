@@ -369,7 +369,7 @@ section {
 
 /* media query */
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 710px) {
     .nav-item {
         margin-left: 15px;
         margin-right: 15px;
@@ -378,7 +378,7 @@ section {
         display: none;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 709px) {
     .nav {
         display: none;
     }
