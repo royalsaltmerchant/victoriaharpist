@@ -204,6 +204,7 @@ p {
     opacity: 0.5;
     outline: none;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 .landing button:hover {
@@ -229,6 +230,7 @@ p {
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
+    transition-duration: 0.4s;
   }
   .demo a:hover {
     opacity: .5;
@@ -353,6 +355,10 @@ section {
 .footer img {
     width: 70px;
     padding: 10px;
+    transition-duration: 0.4s;
+}
+.footer img:hover {
+    opacity: .3;
 }
 
 /* media query */
