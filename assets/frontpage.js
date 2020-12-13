@@ -31,5 +31,5 @@ window.onscroll = () => {
 
 // scroll from landing to main body
 function scrollFromLanding() {
-  window.scrollTo({ top: 740, behavior: 'smooth' })
+  window.scrollTo({ top: 790, behavior: 'smooth' })
 }
