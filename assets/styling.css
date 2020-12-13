@@ -50,9 +50,8 @@ h3 {
 }
 
 img {
-    margin: 10px;
-    max-width: 400px;
-    max-height: 400px;
+    width: 50%;
+    height: auto;
 }
 
 /* header */
@@ -192,7 +191,8 @@ img {
 }
 
 .landing h1 {
-    font-size: 50px;
+    margin: 30px;
+    font-size: 40px;
     text-shadow: 2px 2px rgb(0, 0, 0);
     animation-name: header;
     animation-duration: 4s;
@@ -206,7 +206,7 @@ img {
 
 .landing button {
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     right:10px;
     border-radius: 40px;
     border-width: 2px;
@@ -235,7 +235,7 @@ img {
 /* scroll down button inside landing */
 .demo a {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -346,6 +346,11 @@ section {
     /* max-width: 1000px; */
 }
 
+section a {
+    margin: 20px;
+    line-height: 50%;
+}
+
 .style1 {
     display: flex;
     flex-direction: row;
@@ -356,10 +361,10 @@ section {
     justify-content: left;
 }
 
-.style2 {
+/* .style2 {
     background-image: url('vintage-wallpaper.png');
     background-attachment: fixed;
-}
+} */
 
 /* Footer */
 .footer {
@@ -368,9 +373,11 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+    word-break: break-all;
+    margin: auto;
     align-self: flex-end;
     height: 100vh;
-    font-size: 35px;
+    font-size: 30px;
     position: relative;
     /* padding: 5px; */
     text-align: center;
@@ -384,7 +391,7 @@ section {
 
 .footer img {
     width: 70px;
-    padding: 20px;
+    padding: 10px;
     transition-duration: 0.4s;
 }
 .footer img:hover {
@@ -416,6 +423,9 @@ section {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .header h1 {
+        font-size: 20px;
+    }
     section {
         padding-left: 10px;
         padding-right: 10px;
@@ -430,9 +440,14 @@ section {
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 770px) {
     .style1 {
         flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    img {
+        width: 100%;
     }
 }
 
