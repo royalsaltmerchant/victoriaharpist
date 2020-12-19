@@ -41,17 +41,32 @@ p {
 }
 
 h1 {
-    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
     margin: 10px;
 }
 
-img {
-    width: 50%;
+.vict-img {
+    width: 40%;
+    max-height: 400px;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.buy-btn {
+    width: 200px;
     height: auto;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.pdf-img {
+    width: 300px;
+    height: 400px;
 }
 
 /* header */
@@ -351,14 +366,45 @@ section a {
     line-height: 50%;
 }
 
+.bio a {
+    margin: 0;
+}
+.bio h3 {
+    font-size: 30px;
+}
+
 .style1 {
     display: flex;
     flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
-    align-items: center;
+    align-items: top;
     justify-content: left;
+}
+
+.pdf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.pdf-2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pdf-2 h4 {
+    text-align: center;
+    width: auto;
+    max-width: 300px;
 }
 
 /* .style2 {
@@ -443,13 +489,13 @@ section a {
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
     .style1 {
         flex-wrap: wrap;
         padding-left: 10px;
         padding-right: 10px;
     }
-    img {
+    .vict-img {
         width: 100%;
     }
 }
