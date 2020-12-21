@@ -18,6 +18,9 @@ a {
     color: rgb(255, 204, 116);
     text-decoration: none;
     transition-duration: 0.4s;
+    animation-name: links;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 a:hover {
@@ -508,5 +511,16 @@ section a {
 	}
 	to {
 		opacity: 1;
+	}
+}
+@keyframes links {
+	0% {
+		color: rgb(255, 204, 116);
+	}
+	50% {
+		color: rgb(247, 139, 139);
+    }
+    100% {
+		color: rgb(255, 204, 116);
 	}
 }
