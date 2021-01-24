@@ -86,6 +86,12 @@ h3 {
     height: 400px;
 }
 
+iframe {
+    width: 600px;
+    height: 500px;
+    box-shadow: 3px 3px 5px 1px rgb(26, 26, 26);
+}
+
 /* header */
 .header {
     padding: 0px;
@@ -557,6 +563,12 @@ section a {
     .footer {
         background-position: left;
         background-attachment:scroll
+    }
+    iframe {
+        width: auto;
+        height: auto;
+        min-width: 330px;
+        min-height: 330px;
     }
 }
 
