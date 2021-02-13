@@ -31,5 +31,6 @@ window.onscroll = () => {
 
 // scroll from landing to main body
 function scrollFromLanding() {
-  window.scrollTo({ top: 790, behavior: 'smooth' })
+  var bio = document.getElementById("bio")
+  bio.scrollIntoView({ behavior: 'smooth' })
 }
